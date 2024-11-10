@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: linear-gradient(red, yellow, green);
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(291.34deg, #010101 0%, #4d4d4d 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the container horizontally */
+.dot-container {
+  display: flex;
+  justify-content: space-evenly; /* Space dots evenly */
+  align-items: right;
+  padding: 10px;
+  width: 100%; /* Adjust width as needed */
+}
+
+/* Style for each dot */
+.dot {
+  width: 15px; /* Set the size of the dots */
+  height: 15px;
+  background-color: black;
+  border-radius: 50%; /* Make it circular */
+}
